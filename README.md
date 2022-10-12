@@ -95,7 +95,7 @@ http://100.26.194.86/show/comments
 
 
 ##Comment 수정 PUT
-http://100.26.194.86/modify/comment/1
+http://100.26.194.86/modify/comment/{post_id}
 헤더
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY2NTU5MjQ0N30.S1SmFhvUAQ_vk93UjP4UzlaKGrBsxWjiYBRFu-PGkwUkJx097frjDNxxviC6zQR8Ps7D1UtnQCRPJhepHc8vyg
 Content-Type: application/json
@@ -108,6 +108,6 @@ Content-Type: application/json
 
 
 ##Comment 삭제 DELETE
-http://100.26.194.86/modify/comment/1
+http://100.26.194.86/modify/comment/
 헤더
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY2NTU5MjQ0N30.S1SmFhvUAQ_vk93UjP4UzlaKGrBsxWjiYBRFu-PGkwUkJx097frjDNxxviC6zQR8Ps7D1UtnQCRPJhepHc8vyg
