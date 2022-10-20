@@ -1,7 +1,7 @@
 package com.holy.shit_jwt.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.holy.shit_jwt.common.Timestamped;
+import com.holy.shit_jwt.common.Timemake;
 import com.holy.shit_jwt.controller.dto.MemberRequestDto;
 import lombok.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "member")
 @Entity
-public class Member extends Timestamped {
+public class Member extends Timemake{
 
     @Id
     @Column(name = "member_id")

@@ -24,13 +24,19 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public CommonResponse login(@RequestBody MemberRequestDto memberRequestDto) {//HttpServletResponse response
+    public CommonResponse login(@RequestBody MemberRequestDto memberRequestDto) {
+        return  new CommonResponse(authService.login(memberRequestDto));
+    }
+
+//    @PostMapping("/login")
+//    //responseform의 헤드 세팅하는 방법
+//    public CommonResponse login(@RequestBody MemberRequestDto memberRequestDto, HttpServletResponse response){
 //        TokenDto tokenDto = authService.login(memberRequestDto);
 //        CommonResponse commonResponse = new CommonResponse(tokenDto);
 //        response.setHeader("AT", tokenDto.getAccessToken());
 //        response.setHeader("RT", tokenDto.getRefreshToken());
-        return  new CommonResponse(authService.login(memberRequestDto));
-    }
+//        return  commonResponse;
+//    }
 
     @PostMapping("/reissue")
     public CommonResponse reissue(@RequestBody TokenRequestDto tokenRequestDto) {

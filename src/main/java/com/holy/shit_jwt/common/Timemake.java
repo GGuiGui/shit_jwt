@@ -12,10 +12,10 @@ import java.time.LocalDateTime;
 @Getter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public class Timestamped {
+public class Timemake {
     @CreatedDate
-    private LocalDateTime createdAt;
+    private LocalDateTime maketime;
 
     @LastModifiedDate
-    private LocalDateTime modifiedAt;
+    private LocalDateTime updatime;
 }
